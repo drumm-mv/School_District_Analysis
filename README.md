@@ -83,7 +83,7 @@ The school board requested update requires that we nullify the math and reading 
 </div>
 
 ### school summary
-- The school summary has only been affected for Thomas High School. For Thomas High School the following categories have seen a reduction by a few tenths.
+- The school summary has only been affected for Thomas High School. For Thomas High School the following categories have seen adjustments by a few tenths of a point or percent.
   - Average Math Score
   - Average Reading Score
   - % Passing Math
@@ -508,7 +508,7 @@ The school board requested update requires that we nullify the math and reading 
 </div>
 
 ### The Top Five highest and lowest performing schools
-The top five highest and lowest performing schools have not been affected by the new data. Due to such a minute reduction in Thomas High Schools average scores and passing percentages they remain in the same position within the district.
+The top five highest and lowest performing schools have not been affected by the new data. Due to such a minute fluctuation in Thomas High Schools average scores and passing percentages they remain in the same position within the district.
 
 #### Top Five - Before
 <div>
@@ -687,8 +687,14 @@ The top five highest and lowest performing schools have not been affected by the
 </div>
 
 ### School Summary
-- How does replacing the ninth-grade scores affect the following:
-#### School Summary - Math by grade - Before
+Replacing the ninth-grade scores has little to no affect on the following criteria based charts due to the following reason(s):
+- Math and Reading "Scores by grade"
+  - The scores for Thomas HS 9th grade are not populated (average = NaN)
+  - The remaining grade levels averages remain constant due to Thomas HS 9th grade scores being the only scores removed
+- "Scores By School Spending", "Scores by school size", and "Scores by school type"
+  - The adjustments to the score averages and percentages within these tables are minute, within a few hundredths of a point or percent that formating to school board guidelines causes the appearance of no change.
+
+#### School Summary - Math Scores by grade - Before
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -810,7 +816,7 @@ The top five highest and lowest performing schools have not been affected by the
 </table>
 </div>
 
-#### School Summary - Math by grade - After
+#### School Summary - Math Scores by grade - After
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -932,7 +938,7 @@ The top five highest and lowest performing schools have not been affected by the
 </table>
 </div>
 
-#### School Summary - Reading by grade - Before
+#### School Summary - Reading Scores by grade - Before
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1054,7 +1060,7 @@ The top five highest and lowest performing schools have not been affected by the
 </table>
 </div>
 
-#### School Summary - Reading by grade - After
+#### School Summary - Reading Scores by grade - After
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -1176,7 +1182,7 @@ The top five highest and lowest performing schools have not been affected by the
 </table>
 </div>
 
-### School Summary by spending
+### School Summary - Scores by school spending
 #### School Summary by spending - Before
 <div>
 <table border="1" class="dataframe">
@@ -1481,4 +1487,8 @@ The top five highest and lowest performing schools have not been affected by the
 </div>
 
 ## Summary
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+To summarize, after reading and math scores for the ninth grade at Thomas High School have been replaced with NaN, the following four changes can be observed in the updated school district analysis.
+# A slight reduction in the Districts Average Math Score, % Passing Math, % Passing Reading, and % Overall Passing.
+# For Thomas High School the following categories have seen adjustments by a few tenths of a point or percent.
+# Thomas High School remains within the top five schools in the district due to such minute fluctuations in their average scores and passing percentages.
+# The "Scores By School Spending", "Scores by school size", and "Scores by school type" remain consistent due to micro fluctuations average scores and passing percentages.
