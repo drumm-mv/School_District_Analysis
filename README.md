@@ -1,33 +1,25 @@
 # School_District_Analysis
 School district analysis using python in Jupyter Notebook
 
+The school board has notified Maria and her supervisor that the students_complete.csv file shows evidence of academic dishonesty and although the school board does not know the full extent of the academic dishonesty, they want to uphold state-testing standards.
+
 ## Project Overview
-Explain the purpose of this analysis
+The school board requested update requires that we nullify the math and reading scores for all 9th grade students at Thomas High School only. Once the data has been cleaned we are to repeat the school district analysis and write up a report to describe how the changes affected the original analysis.
 
 ## Resources
 - Data Source: schools_complete.csv, students_complete.csv
 - Software: Python 3.7, Jupyter Notebook, 1.68.1
 
 ## Results
-Using bulleted lists and images of DataFrames as support, address the following questions.
-- How is the district summary affected?
+### District Summary
+- After removing the suspected corrupt data the following categories have seen a slight reduction
+  - Average Math Score
+  - % Passing Math
+  - % Passing Reading
+  - % Overall Passing
 
-### district_summary_df - Before
-
+#### District Summary - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -58,22 +50,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### district_summary_df - After
-
+#### District Summary - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -104,24 +82,16 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-- How is the school summary affected?
+### school summary
+- The school summary has only been affected for Thomas High School. For Thomas High School the following categories have seen a reduction by a few tenths.
+  - Average Math Score
+  - Average Reading Score
+  - % Passing Math
+  - % Passing Reading
+  - % Overall Passing
 
-### School Summary - Before
-
+#### School Summary - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -335,21 +305,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </div>
 
 
-### School Summary - After
+#### School Summary - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -550,25 +507,11 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
+### The Top Five highest and lowest performing schools
+The top five highest and lowest performing schools have not been affected by the new data. Due to such a minute reduction in Thomas High Schools average scores and passing percentages they remain in the same position within the district.
 
-- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-
-### Top Five - Before
-
+#### Top Five - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -661,22 +604,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### Top Five - After
-
+#### Top Five - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -694,87 +623,73 @@ Using bulleted lists and images of DataFrames as support, address the following 
   </thead>
   <tbody>
     <tr>
-      <th>Rodriguez High School</th>
-      <td>District</td>
-      <td>3999</td>
-      <td>$2,547,363.00</td>
-      <td>$637.00</td>
-      <td>76.842711</td>
-      <td>80.744686</td>
-      <td>66.366592</td>
-      <td>80.220055</td>
-      <td>52.988247</td>
+      <th>Cabrera High School</th>
+      <td>Charter</td>
+      <td>1858</td>
+      <td>$1,081,356.00</td>
+      <td>$582.00</td>
+      <td>83.061895</td>
+      <td>83.975780</td>
+      <td>94.133477</td>
+      <td>97.039828</td>
+      <td>91.334769</td>
     </tr>
     <tr>
-      <th>Figueroa High School</th>
-      <td>District</td>
-      <td>2949</td>
-      <td>$1,884,411.00</td>
-      <td>$639.00</td>
-      <td>76.711767</td>
-      <td>81.158020</td>
-      <td>65.988471</td>
-      <td>80.739234</td>
-      <td>53.204476</td>
+      <th>Thomas High School</th>
+      <td>Charter</td>
+      <td>1635</td>
+      <td>$1,043,130.00</td>
+      <td>$638.00</td>
+      <td>83.350937</td>
+      <td>83.896082</td>
+      <td>93.185690</td>
+      <td>97.018739</td>
+      <td>90.630324</td>
     </tr>
     <tr>
-      <th>Huang High School</th>
-      <td>District</td>
-      <td>2917</td>
-      <td>$1,910,635.00</td>
-      <td>$655.00</td>
-      <td>76.629414</td>
-      <td>81.182722</td>
-      <td>65.683922</td>
-      <td>81.316421</td>
-      <td>53.513884</td>
+      <th>Griffin High School</th>
+      <td>Charter</td>
+      <td>1468</td>
+      <td>$917,500.00</td>
+      <td>$625.00</td>
+      <td>83.351499</td>
+      <td>83.816757</td>
+      <td>93.392371</td>
+      <td>97.138965</td>
+      <td>90.599455</td>
     </tr>
     <tr>
-      <th>Hernandez High School</th>
-      <td>District</td>
-      <td>4635</td>
-      <td>$3,022,020.00</td>
-      <td>$652.00</td>
-      <td>77.289752</td>
-      <td>80.934412</td>
-      <td>66.752967</td>
-      <td>80.862999</td>
-      <td>53.527508</td>
+      <th>Wilson High School</th>
+      <td>Charter</td>
+      <td>2283</td>
+      <td>$1,319,574.00</td>
+      <td>$578.00</td>
+      <td>83.274201</td>
+      <td>83.989488</td>
+      <td>93.867718</td>
+      <td>96.539641</td>
+      <td>90.582567</td>
     </tr>
     <tr>
-      <th>Johnson High School</th>
-      <td>District</td>
-      <td>4761</td>
-      <td>$3,094,650.00</td>
-      <td>$650.00</td>
-      <td>77.072464</td>
-      <td>80.966394</td>
-      <td>66.057551</td>
-      <td>81.222432</td>
-      <td>53.539172</td>
+      <th>Pena High School</th>
+      <td>Charter</td>
+      <td>962</td>
+      <td>$585,858.00</td>
+      <td>$609.00</td>
+      <td>83.839917</td>
+      <td>84.044699</td>
+      <td>94.594595</td>
+      <td>95.945946</td>
+      <td>90.540541</td>
     </tr>
   </tbody>
 </table>
 </div>
 
+### School Summary
 - How does replacing the ninth-grade scores affect the following:
-  - Math and reading scores by grade
-### School Summary Math by grade - Before
-
+#### School Summary - Math by grade - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -895,158 +810,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### School Summary Reading by grade - Before
-
+#### School Summary - Math by grade - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>9th</th>
-      <th>10th</th>
-      <th>11th</th>
-      <th>12th</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Bailey High School</th>
-      <td>81.3</td>
-      <td>80.9</td>
-      <td>80.9</td>
-      <td>80.9</td>
-    </tr>
-    <tr>
-      <th>Cabrera High School</th>
-      <td>83.7</td>
-      <td>84.3</td>
-      <td>83.8</td>
-      <td>84.3</td>
-    </tr>
-    <tr>
-      <th>Figueroa High School</th>
-      <td>81.2</td>
-      <td>81.4</td>
-      <td>80.6</td>
-      <td>81.4</td>
-    </tr>
-    <tr>
-      <th>Ford High School</th>
-      <td>80.6</td>
-      <td>81.3</td>
-      <td>80.4</td>
-      <td>80.7</td>
-    </tr>
-    <tr>
-      <th>Griffin High School</th>
-      <td>83.4</td>
-      <td>83.7</td>
-      <td>84.3</td>
-      <td>84.0</td>
-    </tr>
-    <tr>
-      <th>Hernandez High School</th>
-      <td>80.9</td>
-      <td>80.7</td>
-      <td>81.4</td>
-      <td>80.9</td>
-    </tr>
-    <tr>
-      <th>Holden High School</th>
-      <td>83.7</td>
-      <td>83.3</td>
-      <td>83.8</td>
-      <td>84.7</td>
-    </tr>
-    <tr>
-      <th>Huang High School</th>
-      <td>81.3</td>
-      <td>81.5</td>
-      <td>81.4</td>
-      <td>80.3</td>
-    </tr>
-    <tr>
-      <th>Johnson High School</th>
-      <td>81.3</td>
-      <td>80.8</td>
-      <td>80.6</td>
-      <td>81.2</td>
-    </tr>
-    <tr>
-      <th>Pena High School</th>
-      <td>83.8</td>
-      <td>83.6</td>
-      <td>84.3</td>
-      <td>84.6</td>
-    </tr>
-    <tr>
-      <th>Rodriguez High School</th>
-      <td>81.0</td>
-      <td>80.6</td>
-      <td>80.9</td>
-      <td>80.4</td>
-    </tr>
-    <tr>
-      <th>Shelton High School</th>
-      <td>84.1</td>
-      <td>83.4</td>
-      <td>84.4</td>
-      <td>82.8</td>
-    </tr>
-    <tr>
-      <th>Thomas High School</th>
-      <td>83.7</td>
-      <td>84.3</td>
-      <td>83.6</td>
-      <td>83.8</td>
-    </tr>
-    <tr>
-      <th>Wilson High School</th>
-      <td>83.9</td>
-      <td>84.0</td>
-      <td>83.8</td>
-      <td>84.3</td>
-    </tr>
-    <tr>
-      <th>Wright High School</th>
-      <td>83.8</td>
-      <td>83.8</td>
-      <td>84.2</td>
-      <td>84.1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-### School Summary Math by grade - After
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1167,22 +932,130 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### School Summary Reading by grade - After
-
+#### School Summary - Reading by grade - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>9th</th>
+      <th>10th</th>
+      <th>11th</th>
+      <th>12th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bailey High School</th>
+      <td>81.3</td>
+      <td>80.9</td>
+      <td>80.9</td>
+      <td>80.9</td>
+    </tr>
+    <tr>
+      <th>Cabrera High School</th>
+      <td>83.7</td>
+      <td>84.3</td>
+      <td>83.8</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <th>Figueroa High School</th>
+      <td>81.2</td>
+      <td>81.4</td>
+      <td>80.6</td>
+      <td>81.4</td>
+    </tr>
+    <tr>
+      <th>Ford High School</th>
+      <td>80.6</td>
+      <td>81.3</td>
+      <td>80.4</td>
+      <td>80.7</td>
+    </tr>
+    <tr>
+      <th>Griffin High School</th>
+      <td>83.4</td>
+      <td>83.7</td>
+      <td>84.3</td>
+      <td>84.0</td>
+    </tr>
+    <tr>
+      <th>Hernandez High School</th>
+      <td>80.9</td>
+      <td>80.7</td>
+      <td>81.4</td>
+      <td>80.9</td>
+    </tr>
+    <tr>
+      <th>Holden High School</th>
+      <td>83.7</td>
+      <td>83.3</td>
+      <td>83.8</td>
+      <td>84.7</td>
+    </tr>
+    <tr>
+      <th>Huang High School</th>
+      <td>81.3</td>
+      <td>81.5</td>
+      <td>81.4</td>
+      <td>80.3</td>
+    </tr>
+    <tr>
+      <th>Johnson High School</th>
+      <td>81.3</td>
+      <td>80.8</td>
+      <td>80.6</td>
+      <td>81.2</td>
+    </tr>
+    <tr>
+      <th>Pena High School</th>
+      <td>83.8</td>
+      <td>83.6</td>
+      <td>84.3</td>
+      <td>84.6</td>
+    </tr>
+    <tr>
+      <th>Rodriguez High School</th>
+      <td>81.0</td>
+      <td>80.6</td>
+      <td>80.9</td>
+      <td>80.4</td>
+    </tr>
+    <tr>
+      <th>Shelton High School</th>
+      <td>84.1</td>
+      <td>83.4</td>
+      <td>84.4</td>
+      <td>82.8</td>
+    </tr>
+    <tr>
+      <th>Thomas High School</th>
+      <td>83.7</td>
+      <td>84.3</td>
+      <td>83.6</td>
+      <td>83.8</td>
+    </tr>
+    <tr>
+      <th>Wilson High School</th>
+      <td>83.9</td>
+      <td>84.0</td>
+      <td>83.8</td>
+      <td>84.3</td>
+    </tr>
+    <tr>
+      <th>Wright High School</th>
+      <td>83.8</td>
+      <td>83.8</td>
+      <td>84.2</td>
+      <td>84.1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+#### School Summary - Reading by grade - After
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1303,23 +1176,9 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-  - Scores by school spending
-### School Summary by spending - Before
-
+### School Summary by spending
+#### School Summary by spending - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1376,22 +1235,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### School Summary by spending - After
-
+#### School Summary by spending - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1448,23 +1293,10 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-  - Scores by school size
-### School Summary by size - Before
+### School Summary by size
+#### School Summary by size - Before
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1513,22 +1345,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### School Summary by size - After
-
+#### School Summary by size - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1577,23 +1395,9 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-  - Scores by school type
-### School Summary by type - Before
-
+### School Summary by type
+#### School Summary by type - Before
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1634,22 +1438,8 @@ Using bulleted lists and images of DataFrames as support, address the following 
 </table>
 </div>
 
-### School Summary by type - After
-
+#### School Summary by type - After
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
