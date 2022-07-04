@@ -1488,6 +1488,7 @@ Replacing the ninth-grade scores has little to no affect on the following criter
 
 ## Summary
 To summarize, after reading and math scores for the ninth grade at Thomas High School have been replaced with NaN, the following four changes can be observed in the updated school district analysis.
+
 1 A slight reduction in the Districts Average Math Score, % Passing Math, % Passing Reading, and % Overall Passing.
 2 For Thomas High School the following categories have seen adjustments by a few tenths of a point or percent.
 3 Thomas High School remains within the top five schools in the district due to such minute fluctuations in their average scores and passing percentages.
